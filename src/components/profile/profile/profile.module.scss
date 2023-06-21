@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  max-width: 452px;
+  margin: 0 10px;
+}
+
+.profileContainer {
+  width: 100%;
+  background: #162638;
+  border: 1px solid #203650;
+  border-radius: 5px;
+}
+
+.overview {
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.overview .avatar {
+  width: 115px !important;
+  height: 115px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.overview .edit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.overview > div {
+  padding: 0 20px;
+  color: #ffffff;
+  font-family: Open Sans;
+}
+
+.overview > div .name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 5px;
+}
+
+.overview > div .phone {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.overview > div .email {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.smartcards {
+  padding: 20px 20px 0;
+}
+
+.smartcards .addButton {
+  width: 100%;
+  height: 45px;
+  background: none;
+  border: 1px solid #5eb6e5;
+  border-radius: 5px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5eb6e5;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .overview .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .overview > div {
+    padding: 0 10px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+
+  .toolbar button {
+    margin: 0 0 10px 0 !important;
+  }
+}

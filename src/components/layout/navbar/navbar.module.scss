@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.navbar button {
+  height: 40px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  background: none;
+  color: #5eb6e5;
+  border: 2px solid #203650;
+  margin: 0 5px;
+  padding: 0 25px;
+}
+
+.navbar button.active,
+.navbar button.active:hover,
+.navbar button.active:focus {
+  background: #5eb6e5;
+  color: #07203c;
+  border: 2px solid #5eb6e5;
+}
+
+.navbar button:hover,
+.navbar button:focus {
+  background: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar button {
+  }
+}

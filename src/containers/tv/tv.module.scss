@@ -1,0 +1,28 @@
+.container {
+  padding: 0 30px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header button {
+  height: 30px;
+  padding: 0 15px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  color: #91979D;
+}
+
+.header button:hover {
+  color: #5eb6e5;
+}
+
+.header button.active {
+  color: #5eb6e5;
+}
+
+.body {
+  padding-bottom: 140px;
+}

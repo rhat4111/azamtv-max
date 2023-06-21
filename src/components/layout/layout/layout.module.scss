@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  padding-left: 88px;
+  background: #101b28;
+}
+
+.content .body {
+  height: 100%;
+  padding-bottom: 20px;
+}

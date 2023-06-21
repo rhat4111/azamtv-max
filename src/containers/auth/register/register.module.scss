@@ -1,0 +1,230 @@
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+
+  & > div {
+    height: 100vh;
+
+    &:first-child {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: right;
+      }
+    }
+
+    &.board {
+      width: 100%;
+      max-width: 588px;
+      flex-shrink: 0;
+      background: #101b28;
+      padding: 90px 122px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .back {
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        cursor: pointer;
+      }
+
+      .logo {
+        margin-bottom: 22px;
+      }
+
+      .title {
+        font-family: Open Sans;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        width: 100%;
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stepName {
+          font-family: Open Sans;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          color: #ffffff;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .description {
+          font-family: Open Sans;
+          font-size: 14px;
+          line-height: 22px;
+          color: #ffffff;
+          text-align: center;
+        }
+
+        .form {
+          width: 100%;
+          padding-top: 20px;
+
+          .formGroup {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+
+            &.otp {
+              display: flex;
+              flex-direction: row;
+              margin: 0 -7.5px;
+
+              & > div {
+                width: 20% !important;
+                padding: 0 7.5px;
+
+                .textField {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          .formGroup label {
+            font-family: Open Sans;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #c2c9d1;
+            margin-bottom: 5px;
+            display: inline-block;
+          }
+
+          .textField {
+            height: 45px;
+            background: #162638;
+            border: 1px solid #203650;
+            border-radius: 5px;
+            font-family: Open Sans;
+            font-size: 14px;
+            padding: 0 15px;
+            margin-bottom: 15px;
+            color: #e6e9ec;
+
+            &::placeholder {
+              color: #e6e9ec;
+            }
+
+            input {
+              height: 100%;
+              background: #162638;
+              font-family: Open Sans;
+              font-size: 14px;
+              color: #e6e9ec;
+
+              &::placeholder {
+                color: #e6e9ec;
+              }
+            }
+
+            span {
+              font-family: Open Sans;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              color: #5eb6e5;
+            }
+          }
+
+          .selectBox {
+            width: 100%;
+            height: 45px;
+            background: #162638;
+            border: 1px solid #203650;
+            border-radius: 5px;
+            font-family: Open Sans;
+            font-size: 14px;
+            color: #ffffff;
+          }
+
+          .selectBoxItem img {
+            margin-right: 5px;
+          }
+        }
+
+        & > a {
+          font-family: Open Sans;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #5eb6e5;
+          margin-top: 20px;
+        }
+      }
+
+      .registerButton {
+        width: 100%;
+        height: 45px;
+        background: #ef233c;
+        border-radius: 5px;
+        font-family: Open Sans;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        border: none;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+
+      .login {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #5eb6e5;
+        margin-bottom: 30px;
+      }
+
+      .copyright {
+        font-family: Open Sans;
+        font-size: 12px;
+        line-height: 16px;
+        color: #c4c4c4;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    .board {
+      max-width: 440px !important;
+      padding: 90px 40px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    & > div {
+      &:first-child {
+        display: none;
+      }
+
+      &.board {
+        max-width: 100% !important;
+      }
+    }
+  }
+}

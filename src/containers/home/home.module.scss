@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.body {
+  overflow: hidden;
+  
+  .item {
+    padding: 0 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .carousels {
+    padding: 50px 30px;
+  }
+}

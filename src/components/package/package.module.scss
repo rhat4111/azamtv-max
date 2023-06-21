@@ -1,0 +1,47 @@
+.container {
+  width: 295px;
+  background: #203650;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 15px;
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #fbc505;
+  margin-bottom: 10px;
+}
+
+.price span:first-child {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  margin-right: 5px;
+}
+
+.price span:last-child {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.channelCount {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100% !important;
+    margin-right: 0;
+  }
+}

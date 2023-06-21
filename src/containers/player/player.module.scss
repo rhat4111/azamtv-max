@@ -1,0 +1,161 @@
+.container {
+  padding: 0 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.search {
+  width: 100%;
+  max-width: 482px;
+}
+
+.textField {
+  height: 40px;
+  background: #203650;
+  border: 1px solid #364a62;
+  border-radius: 5px;
+}
+
+.textField input {
+  height: 100%;
+  background: none;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.body {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.stage {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detailInfo {
+  width: 100%;
+  max-width: 320px;
+  flex-shrink: 0;
+  background: #1a2b40;
+  border: 1px solid #203650;
+  border-radius: 3px;
+}
+
+.detailInfo > div {
+  padding: 15px;
+  font-family: Open Sans;
+  color: #fff;
+}
+
+.detailInfo > div:first-child p:first-child {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+
+.detailInfo > div:first-child p:last-child {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.detailInfo > div:last-child {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.title {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs button,
+.tabs button:hover,
+.tabs button:focus {
+  height: 30px;
+  border: 2px solid #203650;
+  padding: 0 15px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5eb6e5;
+  margin-right: 10px;
+  background: none;
+}
+
+.tabs button.active,
+.tabs button.active:hover,
+.tabs button.active:focus {
+  background: #5eb6e5;
+  color: #07203c;
+  border: 2px solid #5eb6e5;
+}
+
+.movies {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.movie img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.movie p {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+@media(max-width: 1024px) {
+  .main {
+    flex-direction: column;
+  }
+  
+  .stage {
+    margin-bottom: 20px;
+  }
+
+  .detailInfo {
+    max-width: 100%;
+  }
+}

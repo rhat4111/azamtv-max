@@ -1,0 +1,75 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  background: #203650;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card div:first-child p {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 3px;
+  color: #fff;
+}
+
+.card div:first-child p:nth-child(1) {
+  font-weight: 600;
+  color: #fbc505;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.card div:first-child p:nth-child(2) {
+  font-weight: 600;
+}
+
+.card div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.card button {
+  border-radius: 5px;
+  width: 85px;
+  height: 31px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card .deleteButton {
+  background: #ef233c;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.card .refreshButton {
+  background: none;
+  color: #5eb6e5;
+  border: 1px solid #5eb6e5;
+}
+
+@media (max-width: 640px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card > div:first-child {
+    margin-bottom: 10px;
+  }
+
+  .card > div:last-child {
+    flex-direction: row !important;
+    margin: 0 -5px;
+  }
+
+  .card > div:last-child button {
+    width: 50%;
+    margin: 0 5px !important;
+  }
+}

@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.search {
+  width: 100%;
+  max-width: 482px;
+
+  .textField {
+    height: 40px;
+    background: #203650;
+    border: 1px solid #364a62;
+    border-radius: 5px;
+  }
+
+  .textField input {
+    height: 100%;
+    background: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+  }
+}
+
+.body {
+  overflow: hidden;
+  
+  .item {
+    padding: 0 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .carousels {
+    padding: 50px 30px;
+  }
+}

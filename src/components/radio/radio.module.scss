@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background: #132030;
+  border: 1px solid #203650;
+  min-height: 75px;
+  border-top: 1px solid #203650;
+  padding: 20px 30px 20px 118px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .file {
+    display: flex;
+
+    & > img {
+      margin-right: 10px;
+    }
+
+    & > div {
+      p {
+        font-family: Open Sans;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+
+        &:first-child {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .controls {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+
+    button {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0 15px;
+      border: none;
+      background: none;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .play {
+      font-size: 40px;
+    }
+  }
+
+  .progress {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-family: Open Sans;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ffffff;
+      margin: 0 10px;
+    }
+
+    & > div {
+      width: 450px;
+      height: 5px;
+      position: relative;
+      padding: 0 10px;
+      background: #c2c9d1;
+      border-radius: 5px;
+
+      & > div {
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ef233c;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    .progress {
+      & > div {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .controls {
+      position: relative !important;
+      transform: none !important;
+      top: auto !important;
+      left: auto !important;
+    }
+
+    .progress {
+      & > div {
+        width: 100%;
+      }
+    }
+  }
+}

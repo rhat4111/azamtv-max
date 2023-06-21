@@ -1,0 +1,28 @@
+.container {
+  padding: 0 30px;
+}
+
+.card {
+  background: #1a2b40;
+  border: 1px solid #203650;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.title {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px 0;
+}
+
+.card .content {
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
